@@ -1,8 +1,8 @@
-Trabalho Pratico de ALGAV 2014/2015
+<h1>Trabalho Pratico de ALGAV 2014/2015</h1>
 
 ----------------
 
-<p>Com este trabalho pretende-se desenvolver uma aplicação capaz de modelar a rede de metro de Paris e sugerir trajetos aos turistas em função dos seus interesses/locais a visitar.</p>
+<h3>Com este trabalho pretende-se desenvolver uma aplicação capaz de modelar a rede de metro de Paris e sugerir trajetos aos turistas em função dos seus interesses/locais a visitar.</h3>
 <p>O sistema a desenvolver deverá ter as seguintes funcionalidades:<p>
 <ul>
 <li>1. Permitir a modelação da rede de metro, com indicação das linhas, estações, cruzamentos e direção.</li>
