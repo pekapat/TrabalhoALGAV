@@ -22,6 +22,52 @@ linha(9, ["Pont de Sèvres", "Billancourt", "Marcel Sembat", "Porte de Saint-Clo
 
 linha(10, ["Boulogne Pont de Saint-Cloud", "Boulogne Jean Jaurès", "Michel-Ange Molitor", "Chardon Lagache", "MiraBeau", "Javel-André Citroen", "Charles Michels", "Avenue Émile Zola", "La Motte-Picquet Grenelle", "Ségur", "Duroc", "Vaneau", "Sèvres-Babylone", "Mabillon", "Odéon", "Cluny-La Sorbonne", "Maubert-Mutualité", "Cardinal Lemoine", "Jussieu", "Gare d'Austerlitz"]).
 
+linha(11, ["Châtelet","Hôtel de Ville","Rambuteau","Goncourt","Belleville","Pyrénées","Jourdain","Place des Fêtes","Télégraphe","Mairie des Llias"]).
+
+linha(12,["Front Populaire","Porte de la Chapelle","Marx Dormoy","Marcadet Poissonniers","Jules Joffrin","Lamarck Caulaincourt","Abbesses","Pigalle","Sain-Georges","Notre-Dame de-Lorette","Trinité d'Estienne D'Orves","Madeleine","Concorde","Assemblée Nationale","Solférino","Rue du Bac","Sévres Babylone","Rennes","Notre-Dame-des-Champs","Falguière","Pasteur","Volontaires","Vaugirard","Convention","Porte de Versailles","Corentin Celton","Marie d'Issy"]).
+
+linha(13.1,["Châtillon-Montrouge","Malakoff Rue Étienne Dolet","Malakoff Plateau de Vanves","Porte de Vanves","Plaisance","Pernety","Gaîté","Gare Montparnasse","Duroc","Saint François Xavier","Varenne","Invalides","Champs Élysées Clemenceau","Miromesnil","Liège","Place de Clichy", "La Fourge","Brochant","Porte de Clichy","Mairie de Clichy","Gabriel Péri","Les Agnettes","Les Courtillies"]).
+
+linha(13.2,["Châtillon-Montrouge","Malakoff Rue Étienne Dolet","Malakoff Plateau de Vanves","Porte de Vanves","Plaisance","Pernety","Gaîté","Gare Montparnasse","Duroc","Saint François Xavier","Varenne","Invalides","Champs Élysées Clemenceau","Miromesnil","Liège","Place de Clichy", "La Fourge","Guy Môquet","Porte de Saint-Ouen","Garibaldi","Mairie de Saint-Ouen","Carrefour Pleyel","Saint-Denis Porte de Paris","Basilique de St-Denis","Saint-Denis-Université"]).
+
+linha(14,["Olympiades","Bibliothèque Fr. Mitterrand","Cour St-Émilion","Bercy","Gare d'Austerlitz","Châtelet","Pyramides","Madeleine","Saint-Lazare"]).
+
+linha(A1,["Cergy","La Défense","Charles de Gaulle Êtolle","Auber","Les Halles","Gare d'Austerlitz","Nation","Vincennes","Marne-la-Vallée"]).
+
+linha(A2,["Cergy","La Défense","Charles de Gaulle Êtolle","Auber","Les Halles","Gare d'Austerlitz","Nation","Vincennes","Boissy-St-Lagger"]).
+
+linha(A3,["Poissy","La Défense","Charles de Gaulle Êtolle","Auber","Les Halles","Gare d'Austerlitz","Nation","Vincennes","Marne-la-Vallée"]).
+
+linha(A4,["Poissy","La Défense","Charles de Gaulle Êtolle","Auber","Les Halles","Gare d'Austerlitz","Nation","Vincennes","Boissy-St-Lagger"]).
+
+linha(A5,["St-Germain-en-Laye","La Défense","Charles de Gaulle Êtolle","Auber","Les Halles","Gare d'Austerlitz","Nation","Vincennes","Marne-la-Vallée"]).
+
+linha(A6,["St-Germain-en-Laye","La Défense","Charles de Gaulle Êtolle","Auber","Les Halles","Gare d'Austerlitz","Nation","Vincennes","Boissy-St-Lagger"]).
+
+linha(B1,["Robinson","Bourg-la-Reine","Bagneux","Arcueil-Cachan","Laplace","Gentilly","Cité Universitaire","Denfert Rochereau","Port-Royal","Luxembourg","St-Michel-Notre-Dame","Châtelet Les Halles","Gare du Nord","La Plaine Stade de France","La Courneuve Aubervilliers","Le Bourget","Mitry-Claye"]).
+
+linha(B2,["Saint-Rémy-les-Chevreuse","Antony","Buorg-la-Reine","Bagneux","Arcueil-Cachan","Laplace","Gentilly","Cité Universitaire","Denfert Rochereau","Port-Royal","Luxembourg","St-Michel-Notre-Dame","Châtelet Les Halles","Gare du Nord","La Plaine Stade de France","La Courneuve Aubervilliers","Le Bourget","Mitry-Claye"]).
+
+linha(B3,["Robinson","Bourg-la-Reine","Bagneux","Arcueil-Cachan","Laplace","Gentilly","Cité Universitaire","Denfert Rochereau","Port-Royal","Luxembourg","St-Michel-Notre-Dame","Châtelet Les Halles","Gare du Nord","La Plaine Stade de France","La Courneuve Aubervilliers","Le Bourget","Parc des Expositions","Aéroport Charles de Gaulle"]).
+
+linha(B4,["Saint-Rémy-les-Chevreuse","Antony","Bourg-la-Reine","Bagneux","Arcueil-Cachan","Laplace","Gentilly","Cité Universitaire","Denfert Rochereau","Port-Royal","Luxembourg","St-Michel-Notre-Dame","Châtelet Les Halles","Gare du Nord","La Plaine Stade de France","La Courneuve Aubervilliers","Le Bourget","Parc des Expositions","Aéroport Charles de Gaulle"]).
+
+linha(C1,["Massy-Palalseau Versailles-Chantlers","Choisy-le-Roi","Les Ardoines","Vitry sur-Seine","Ivry sur-Seine","Bibliothèque Fr. Mitterrand","Gare d'Austerlitz","St-Michel Notre-Dame","Musée d'Orsay","Invalides","Pont de l'Alma","Champ de Mars Tour Eiffel","Javel","Pont du Gariliano","Issy Val de Seine","Issy","Meudon-Val-Fleury","Chaville-Véllizy","Viroflay Rive Gauche","Versailles-Château"]).
+
+linha(C2,["Dourdan Saint-Martin-d'Étampes","Choisy-le-Roi","Les Ardoines","Vitry sur-Seine","Ivry sur-Seine","Bibliothèque Fr. Mitterrand","Gare d'Austerlitz","St-Michel Notre-Dame","Musée d'Orsay","Invalides","Pont de l'Alma","Champ de Mars Tour Eiffel","Javel","Pont du Gariliano","Issy Val de Seine","Issy","Meudon-Val-Fleury","Chaville-Véllizy","Viroflay Rive Gauche","Versailles-Château"]).
+
+linha(C3,["Massy-Palalseau Versailles-Chantlers","Choisy-le-Roi","Les Ardoines","Vitry sur-Seine","Ivry sur-Seine","Bibliothèque Fr. Mitterrand","Gare d'Austerlitz","St-Michel Notre-Dame","Musée d'Orsay","Invalides","Pont de l'Alma","Champ de Mars Tour Eiffel","Avenue du Pdt Kennedy","Boulainvilliers","Avenue Henri Martin","Avenue Foch","Neuilly-Porte Maillot","Pereire-Levallois","Porte de Clichy","Saint Ouen","Les Grésillons","Pontoise"]).
+
+linha(C4,["Dourdan Saint-Martin-d'Étampes","Choisy-le-Roi","Les Ardoines","Vitry sur-Seine","Ivry sur-Seine","Bibliothèque Fr. Mitterrand","Gare d'Austerlitz","St-Michel Notre-Dame","Musée d'Orsay","Invalides","Pont de l'Alma","Champ de Mars Tour Eiffel","Avenue du Pdt Kennedy","Boulainvilliers","Avenue Henri Martin","Avenue Foch","Neuilly-Porte Maillot","Pereire-Levallois","Porte de Clichy","Saint Ouen","Les Grésillons","Pontoise"]).
+
+linha(D1,["Malesherbes","Le Vert de Maisons","Maisons-Alfort Alfortville","Gare d'Austerlitz","Les Halles","Gare du Nord","Stade de France Saint-Denis","Saint-Denis","Crell"]).
+
+linha(D2,["Melun","Le Vert de Maisons","Maisons-Alfort Alfortville","Gare d'Austerlitz","Les Halles","Gare du Nord","Stade de France Saint-Denis","Saint-Denis","Crell"]).
+
+linha(E1,["Haussmann Saint-Lazare","Gare du Nord","Pantin","Noisy-le-Sec","Tournan"]).
+
+linha(E2,["Haussmann Saint-Lazare","Gare du Nord","Pantin","Noisy-le-Sec","Chelles Gournay"]).
+
 %	Faltam as linhas 10.2, 11, 12, 13, 14, 3bis
 
 gera_estacoes:- findall(L, linha(_,L), LE), gera_estacoes(LE, Estacoes), gera_estacoes(Estacoes).
