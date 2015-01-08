@@ -85,6 +85,15 @@ gera_cruzamentos:- findall(_,cruzamento,_).
 cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), LI \== [], assertz(cruza(N1,N2,LI)).
 
 
+% liga(Linha, EstacaoOrigem, EstacaoFinal, Tempo).
+
+gera_ligacoes:- findall(_, (linha(N,L), gera_ligacoes(N, L, L)), _).
+
+gera_ligacoes(_, _, [_|[]]).
+gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), assertz(liga(N, H, H1, 5)).
+
+
+
 
 
 
