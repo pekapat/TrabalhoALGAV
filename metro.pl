@@ -32,17 +32,17 @@ linha(13.2,['Châtillon-Montrouge','Malakoff Rue Étienne Dolet','Malakoff Plate
 
 linha(14,['Olympiades','Bibliothèque Fr. Mitterrand','Cour St-Émilion','Bercy','Gare dAusterlitz','Châtelet','Pyramides','Madeleine','Saint-Lazare']).
 
-linha('A1',['Cergy','La Défense','Charles de Gaulle Êtolle','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Marne-la-Vallée']).
+linha('A1',['Cergy','La Défense','Charles de Gaulle Êtoile','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Marne-la-Vallée']).
 
-linha('A2',['Cergy','La Défense','Charles de Gaulle Êtolle','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Boissy-St-Lagger']).
+linha('A2',['Cergy','La Défense','Charles de Gaulle Êtoile','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Boissy-St-Lagger']).
 
-linha('A3',['Poissy','La Défense','Charles de Gaulle Êtolle','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Marne-la-Vallée']).
+linha('A3',['Poissy','La Défense','Charles de Gaulle Êtoile','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Marne-la-Vallée']).
 
-linha('A4',['Poissy','La Défense','Charles de Gaulle Êtolle','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Boissy-St-Lagger']).
+linha('A4',['Poissy','La Défense','Charles de Gaulle Êtoile','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Boissy-St-Lagger']).
 
-linha('A5',['St-Germain-en-Laye','La Défense','Charles de Gaulle Êtolle','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Marne-la-Vallée']).
+linha('A5',['St-Germain-en-Laye','La Défense','Charles de Gaulle Êtoile','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Marne-la-Vallée']).
 
-linha('A6',['St-Germain-en-Laye','La Défense','Charles de Gaulle Êtolle','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Boissy-St-Lagger']).
+linha('A6',['St-Germain-en-Laye','La Défense','Charles de Gaulle Êtoile','Auber','Les Halles','Gare dAusterlitz','Nation','Vincennes','Boissy-St-Lagger']).
 
 linha('B1',['Robinson','Bourg-la-Reine','Bagneux','Arcueil-Cachan','Laplace','Gentilly','Cité Universitaire','Denfert Rochereau','Port-Royal','Luxembourg','St-Michel-Notre-Dame','Châtelet Les Halles','Gare du Nord','La Plaine Stade de France','La Courneuve Aubervilliers','Le Bourget','Mitry-Claye']).
 
@@ -67,6 +67,35 @@ linha('D2',['Melun','Le Vert de Maisons','Maisons-Alfort Alfortville','Gare dAus
 linha('E1',['Haussmann Saint-Lazare','Gare du Nord','Pantin','Noisy-le-Sec','Tournan']).
 
 linha('E2',['Haussmann Saint-Lazare','Gare du Nord','Pantin','Noisy-le-Sec','Chelles Gournay']).
+
+ponto_turistico('Torre Eiffel','Bir-Hakeim').
+
+ponto_turistico('Arco do Triunfo','Charles de Gaulle Êtoile').
+
+ponto_turistico('Sacré Cour',['Jules Joffrin','Pigalle','Abesses']).
+
+ponto_turistico('Louvre','Palais Royal Musée du Louvre').
+
+ponto_turistico('Catedral de Notre Dame',['Cité , Saint-Michel', 'Hôtel de Ville', 'Maubert-Mutualité','Cluny-La Sorbonne','Châtelet']).
+
+ponto_turistico('Grand Palais',['Franklin-D. Roosevelt , Champs-Elysées-Clemenceau']).
+
+ponto_turistico('La Défense','La Défense').
+
+ponto_turistico('Stade de France','St Denis-Porte de Paris').
+
+ponto_turistico('La Conciergerie',['Châtelet','Saint-Michel','Cité']).
+
+ponto_turistico('Palácio de Versailles','Château de Versailles Rive Gauche').
+
+ponto_turistico('Museu Grévin','Grands Boulevards').
+
+ponto_turistico('Jardim da Aclimatação','Les Sablons').
+
+ponto_turistico('Jardim das Plantas',['Austerlitz','Censier-Daubenton','Jussieu']).
+
+
+ponto_turistico('Disneyland','Marne-la-Vallée').
 
 %	Faltam as linhas 10.2
 
