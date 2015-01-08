@@ -70,10 +70,10 @@ linha("E2",["Haussmann Saint-Lazare","Gare du Nord","Pantin","Noisy-le-Sec","Che
 
 %	Faltam as linhas 10.2, 11, 12, 13, 14, 3bis
 
-gera_estacoes:- findall(L, linha(_,L), LE), gera_estacoes(LE, Estacoes), gera_estacoes(Estacoes).
+gera_estacoes:- findall(L, linha(_,L), LE), gera_estacoes(LE, Estacoes), assertz(estacoes(Estacoes)). %gera_estacoes(Estacoes).
 
-gera_estacoes([]).
-gera_estacoes([H|T]):- gera_estacoes(T), atom_string(H, E), assertz(estacoes(E)).
+%gera_estacoes([]).
+%gera_estacoes([H|T]):- gera_estacoes(T), atom_string(H, E), assertz(estacoes(E)).
 
 gera_estacoes([],[]).
 gera_estacoes([H|T], LE):- gera_estacoes(T,LR), append(LR, H, LE).
