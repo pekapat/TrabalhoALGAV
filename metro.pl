@@ -93,6 +93,12 @@ gera_ligacoes(_, _, [_|[]]).
 gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), assertz(liga(N, H, H1, 5)).
 
 
+caminho(O, D, L):- caminho(O, D, [O], L).
+
+caminho(D, D, _, [D]).
+caminho(O, D, LA, [O|L]):- liga(_,O, X, _), \+member(X,LA), caminho(X,D,[X|LA], L).
+
+
 
 
 
