@@ -80,6 +80,15 @@ gera_estacoes([H|T], LE):- gera_estacoes(T,LR), append(LR, H, LE).
 
 
 
+gera_cruzamentos:- findall(_,cruzamento,_).
+
+cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), LI \== [], assertz(cruza(N1,N2,LI)).
+
+
+
+
+
+
 
 
 
