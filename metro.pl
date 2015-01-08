@@ -4,7 +4,7 @@ linha(2, ["Porte Dauphine", "Victor Hugo", "Charles de Gaulle Étoile", "Ternes"
 
 linha(3, ["Pont de Levallois Bécon", "Anatole France", "Louise Michel", "Porte de Champerret", "Pereire", "Wagram", "Malesherbes", "Villiers", "Europe", "Saint-Lazare", "Havre-Caumartin", "Opéra", "Quatre-Septembre", "Bourse", "Sentier", "Réamur-Sébastopol", "Arts et Métiers", "Temple", "République", "Parmentier", "Rue Saint-Maur", "Père Lachaise", "Gambetta", "Porte de Bagnolet", "Gallieni"]).
 
-%linha 3 bis
+linha("3bis",["Gambetta","Pelleport","Saint-Fargeau","Porte des Llias"]).
 
 linha(4, ["Porte de Clignancourt", "Simplon", "Marcadet Poissonniers", "Château Rouge", "Barbès-Rochechouart", "Gare du Nord", "Gare de l'Est", "Château d'Eau", "Strasbourg Saint-Denis", "Réamur-Sébastopol", "Étienne Marcel", "Les Halles", "Châtelet", "Cité", "Saint-Michel", "Odéon", "Saint-Germain-des-Prés", "Saint-Sulpice", "Saint-Placide", "Montparnasse Bienvenue", "Vavin", "Raspail", "Denfert-Rochereau", "Mouton-Duvernet", "Alésia", "Porto d'Orléans"]).
 
@@ -68,7 +68,7 @@ linha("E1",["Haussmann Saint-Lazare","Gare du Nord","Pantin","Noisy-le-Sec","Tou
 
 linha("E2",["Haussmann Saint-Lazare","Gare du Nord","Pantin","Noisy-le-Sec","Chelles Gournay"]).
 
-%	Faltam as linhas 10.2, 11, 12, 13, 14, 3bis
+%	Faltam as linhas 10.2
 
 gera_estacoes:- findall(L, linha(_,L), LE), gera_estacoes(LE, Estacoes), assertz(estacoes(Estacoes)). %gera_estacoes(Estacoes).
 
