@@ -1,3 +1,5 @@
+%	Base de conhecimento
+
 linha(1, ['Château de Vincennes', 'Bérault', 'Saint-Mandlé-Tourelle', 'Porte de Vincennes', 'Nation', 'Reuilly-Diderot', 'Gare de Lyon', 'Bastille', 'Saint-Paul', 'Hotel de Ville', 'Châtelet', 'Louvre-Rivoli', 'Palais Royal-Museé du Louvre', 'Tuileries', 'Concorde', 'Champs-Élysées-Clemenceau', 'Franklin D.Roosevelt', 'George V', 'Charles de Gaulle - Étoile', 'Argentine', 'Porte Maillot', 'Les Sablons', 'Pont de Neuilly', 'Esplanade de La Défense', 'La Défense']).
 
 linha(2, ['Porte Dauphine', 'Victor Hugo', 'Charles de Gaulle Étoile', 'Ternes', 'Courcelles', 'Monceau', 'Villiers', 'Rome', 'Place de Clichy', 'Blanche', 'Pigalle', 'Anvers', 'Barbès-Rochechouart', 'La Chapelle', 'Stalingrad', 'Jaurès', 'Colonel Fabien', 'Belleville', 'Couronnes', 'Ménilmontant', 'Père Lachaise', 'Philippe Auguste', 'Alexandre Dumas', 'Avron', 'Nation']).
@@ -106,29 +108,40 @@ ponto_turistico('Museu de Orsay','Solférino').
 
 ponto_turistico('Champs de Mars','École Militaire').
 
-%	Faltam as linhas 10.2
+%	Falta a linha 10.2
 
-gera_estacoes:- findall(L, linha(_,L), LE), gera_estacoes(LE, Estacoes), assertz(estacoes(Estacoes)). %gera_estacoes(Estacoes).
+% --------------------------------------------------------------------------------------------------------------------- %
 
-%gera_estacoes([]).
-%gera_estacoes([H|T]):- gera_estacoes(T), atom_string(H, E), assertz(estacoes(E)).
 
+
+%	Função para criar dinamicamente todas as estações de metro carregadas na base de conhecimento.
+
+gera_estacoes:- findall(L, linha(_,L), LE), gera_estacoes(LE, Estacoes), assertz(estacoes(Estacoes)).
 gera_estacoes([],[]).
 gera_estacoes([H|T], LE):- gera_estacoes(T,LR), append(LR, H, LE).
 
+% --------------------------------------------------------------------------------------------------------------------- %
 
+
+
+%	Função para criar dinamicamente todos os cruzamentos entre linhas de metro e respectivas estações.
 
 gera_cruzamentos:- findall(_,cruzamento,_).
 
-cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), LI \== [], assertz(cruza(N1,N2,LI)).
+cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), LI \== [], assertz(cruzamento(N1,N2,LI)).
+
+% --------------------------------------------------------------------------------------------------------------------- %
 
 
-% liga(Linha, EstacaoOrigem, EstacaoFinal, Tempo).
+
+%	Funcão para criar dinamicamente factos do tipo liga(Linha, EstacaoOrigem, EstacaoFinal, Tempo).
 
 gera_ligacoes:- findall(_, (linha(N,L), gera_ligacoes(N, L, L)), _).
 
 gera_ligacoes(_, _, [_|[]]).
 gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), assertz(liga(N, H, H1, 5)).
+
+% --------------------------------------------------------------------------------------------------------------------- %
 
 
 caminho(O, D, L):- caminho(O, D, [O], L).
