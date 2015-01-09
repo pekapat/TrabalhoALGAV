@@ -72,89 +72,89 @@ linha('E1',['Haussmann Saint-Lazare','Gare du Nord','Pantin','Noisy-le-Sec','Tou
 
 linha('E2',['Haussmann Saint-Lazare','Gare du Nord','Pantin','Noisy-le-Sec','Chelles Gournay']).
 
-ponto_turistico('Torre Eiffel','Bir-Hakeim').
+ponto_turistico('Torre Eiffel','Bir-Hakeim',30).
 
-ponto_turistico('Torre Eiffel','Trocadéro').
+ponto_turistico('Torre Eiffel','Trocadéro',30).
 
-ponto_turistico('Torre Eiffel','Champ de Mars Tour Eiffel').
+ponto_turistico('Torre Eiffel','Champ de Mars Tour Eiffel',30).
 
-ponto_turistico('Arco do Triunfo','Charles de Gaulle Êtoile').
+ponto_turistico('Arco do Triunfo','Charles de Gaulle Êtoile',25).
 
-ponto_turistico('Sacré Cour','Jules Joffrin').
+ponto_turistico('Sacré Cour','Jules Joffrin',40).
 
-ponto_turistico('Sacré Cour','Pigalle').
+ponto_turistico('Sacré Cour','Pigalle',40).
 
-ponto_turistico('Sacré Cour','Abesses').
+ponto_turistico('Sacré Cour','Abesses',40).
 
-ponto_turistico('Sacré Cour','Anvers').
+ponto_turistico('Sacré Cour','Anvers',40).
 
-ponto_turistico('Louvre','Palais Royal Musée du Louvre').
+ponto_turistico('Louvre','Palais Royal Musée du Louvre',35).
 
-ponto_turistico('Catedral de Notre Dame','Cité').
+ponto_turistico('Catedral de Notre Dame','Cité',30).
 
-ponto_turistico('Catedral de Notre Dame','Saint-Michel').
+ponto_turistico('Catedral de Notre Dame','Saint-Michel',30).
 
-ponto_turistico('Catedral de Notre Dame','Hôtel de Ville').
+ponto_turistico('Catedral de Notre Dame','Hôtel de Ville',30).
 
-ponto_turistico('Catedral de Notre Dame','Maubert-Mutualité').
+ponto_turistico('Catedral de Notre Dame','Maubert-Mutualité',30).
 
-ponto_turistico('Catedral de Notre Dame','Cluny-La Soborne').
+ponto_turistico('Catedral de Notre Dame','Cluny-La Soborne',30).
 
-ponto_turistico('Catedral de Notre Dame','Châtelet').
+ponto_turistico('Catedral de Notre Dame','Châtelet,30').
 
-ponto_turistico('Catedral de Notre Dame','St-Michel-Notre-Dame').
+ponto_turistico('Catedral de Notre Dame','St-Michel-Notre-Dame',30).
 
-ponto_turistico('Grand Palais','Franklin-D. Roosevelt').
+ponto_turistico('Grand Palais','Franklin-D. Roosevelt',40).
 
-ponto_turistico('Grand Palais','Champs-Elysées-Clemenceau').
+ponto_turistico('Grand Palais','Champs-Elysées-Clemenceau',40).
 
-ponto_turistico('Grand Palais','Invalides').
+ponto_turistico('Grand Palais','Invalides',40).
 
-ponto_turistico('La Défense','La Défense').
+ponto_turistico('La Défense','La Défense',40).
 
-ponto_turistico('Stade de France','St Denis-Porte de Paris').
+ponto_turistico('Stade de France','St Denis-Porte de Paris',45).
 
-ponto_turistico('Stade de France','La Plaine Stade de France').
+ponto_turistico('Stade de France','La Plaine Stade de France',45).
 
-ponto_turistico('Stade de France','Stade de France St-Denis').
+ponto_turistico('Stade de France','Stade de France St-Denis',45).
 
-ponto_turistico('La Conciergerie','Châtelet').
+ponto_turistico('La Conciergerie','Châtelet',30).
 
-ponto_turistico('La Conciergerie','Saint-Michel').
+ponto_turistico('La Conciergerie','Saint-Michel',30).
 
-ponto_turistico('La Conciergerie','Cité').
+ponto_turistico('La Conciergerie','Cité',30).
 
-ponto_turistico('Palácio de Versalhes','Château de Versailles Rive Gauche').
+ponto_turistico('Palácio de Versalhes','Château de Versailles Rive Gauche',50).
 
-ponto_turistico('Museu Grévin','Grands Boulevards').
+ponto_turistico('Museu Grévin','Grands Boulevards',35).
 
-ponto_turistico('Jardim da Aclimatação','Les Sablons').
+ponto_turistico('Jardim da Aclimatação','Les Sablons',20).
 
-ponto_turistico('Jardim das Plantas','Austerlitz').
+ponto_turistico('Jardim das Plantas','Austerlitz',25).
 
-ponto_turistico('Jardim das Plantas','Censier Daubenton').
+ponto_turistico('Jardim das Plantas','Censier Daubenton',25).
 
-ponto_turistico('Jardim das Plantas','Jussieu').
+ponto_turistico('Jardim das Plantas','Jussieu',25).
 
-ponto_turistico('Disneyland','Marne-la-Vallée').
+ponto_turistico('Disneyland','Marne-la-Vallée',50).
 
-ponto_turistico('Museu de Arte Moderna','Rambuteau').
+ponto_turistico('Museu de Arte Moderna','Rambuteau',45).
 
-ponto_turistico('Museu de Arte Moderna','Hôtel de Ville').
+ponto_turistico('Museu de Arte Moderna','Hôtel de Ville',45).
 
-ponto_turistico('Museu de Arte Moderna','Châtelet–Les Halles').
+ponto_turistico('Museu de Arte Moderna','Châtelet–Les Halles',45).
 
-ponto_turistico('Cidade das Ciências','Porte de la Villette').
+ponto_turistico('Cidade das Ciências','Porte de la Villette',40).
 
-ponto_turistico('Tour Montparnasse','Montparnasse Bienvenue').
+ponto_turistico('Tour Montparnasse','Montparnasse Bienvenue',30).
 
-ponto_turistico('Tour Montparnasse','Gare Montparnasse').
+ponto_turistico('Tour Montparnasse','Gare Montparnasse',30).
 
-ponto_turistico('Museu de Orsay','Solférino').
+ponto_turistico('Museu de Orsay','Solférino',55).
 
-ponto_turistico('Museu de Orsay','Musée dOrsay').
+ponto_turistico('Museu de Orsay','Musée dOrsay',55).
 
-ponto_turistico('Champs de Mars','École Militaire').
+ponto_turistico('Champs de Mars','École Militaire',40).
 
 % --------------------------------------------------------------------------------------------------------------------- %
 
