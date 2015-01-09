@@ -100,7 +100,7 @@ ponto_turistico('Catedral de Notre Dame','Maubert-Mutualité',30).
 
 ponto_turistico('Catedral de Notre Dame','Cluny-La Soborne',30).
 
-ponto_turistico('Catedral de Notre Dame','Châtelet,30').
+ponto_turistico('Catedral de Notre Dame','Châtelet',30).
 
 ponto_turistico('Catedral de Notre Dame','St-Michel-Notre-Dame',30).
 
