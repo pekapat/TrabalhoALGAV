@@ -72,19 +72,19 @@ ponto_turistico('Torre Eiffel','Bir-Hakeim').
 
 ponto_turistico('Arco do Triunfo','Charles de Gaulle Êtoile').
 
-ponto_turistico('Sacré Cour',['Jules Joffrin','Pigalle','Abesses']).
+ponto_turistico('Sacré Cour','Jules Joffrin').
 
 ponto_turistico('Louvre','Palais Royal Musée du Louvre').
 
-ponto_turistico('Catedral de Notre Dame',['Cité , Saint-Michel', 'Hôtel de Ville', 'Maubert-Mutualité','Cluny-La Sorbonne','Châtelet']).
+ponto_turistico('Catedral de Notre Dame','Cité').
 
-ponto_turistico('Grand Palais',['Franklin-D. Roosevelt , Champs-Elysées-Clemenceau']).
+ponto_turistico('Grand Palais','Franklin-D. Roosevelt').
 
 ponto_turistico('La Défense','La Défense').
 
 ponto_turistico('Stade de France','St Denis-Porte de Paris').
 
-ponto_turistico('La Conciergerie',['Châtelet','Saint-Michel','Cité']).
+ponto_turistico('La Conciergerie','Châtelet').
 
 ponto_turistico('Palácio de Versailles','Château de Versailles Rive Gauche').
 
@@ -92,8 +92,7 @@ ponto_turistico('Museu Grévin','Grands Boulevards').
 
 ponto_turistico('Jardim da Aclimatação','Les Sablons').
 
-ponto_turistico('Jardim das Plantas',['Austerlitz','Censier-Daubenton','Jussieu']).
-
+ponto_turistico('Jardim das Plantas','Austerlitz').
 
 ponto_turistico('Disneyland','Marne-la-Vallée').
 
