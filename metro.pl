@@ -86,7 +86,7 @@ ponto_turistico('Stade de France','St Denis-Porte de Paris').
 
 ponto_turistico('La Conciergerie','Châtelet').
 
-ponto_turistico('Palácio de Versailles','Château de Versailles Rive Gauche').
+ponto_turistico('Palácio de Versalhes','Château de Versailles Rive Gauche').
 
 ponto_turistico('Museu Grévin','Grands Boulevards').
 
@@ -95,6 +95,16 @@ ponto_turistico('Jardim da Aclimatação','Les Sablons').
 ponto_turistico('Jardim das Plantas','Austerlitz').
 
 ponto_turistico('Disneyland','Marne-la-Vallée').
+
+ponto_turistico('Museu de Arte Moderna','Rambuteau').
+
+ponto_turistico('Cidade das Ciências','Porte de la Villette').
+
+ponto_turistico('Tour Montparnasse','Montparnasse Bienvenue').
+
+ponto_turistico('Museu de Orsay','Solférino').
+
+ponto_turistico('Champs de Mars','École Militaire').
 
 %	Faltam as linhas 10.2
 
