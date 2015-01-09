@@ -24,6 +24,8 @@ linha(9, ['Pont de Sèvres', 'Billancourt', 'Marcel Sembat', 'Porte de Saint-Clo
 
 linha(10, ['Boulogne Pont de Saint-Cloud', 'Boulogne Jean Jaurès', 'Michel-Ange Molitor', 'Chardon Lagache', 'MiraBeau', 'Javel-André Citroen', 'Charles Michels', 'Avenue Émile Zola', 'La Motte-Picquet Grenelle', 'Ségur', 'Duroc', 'Vaneau', 'Sèvres-Babylone', 'Mabillon', 'Odéon', 'Cluny-La Sorbonne', 'Maubert-Mutualité', 'Cardinal Lemoine', 'Jussieu', 'Gare dAusterlitz']).
 
+linha(10.2, ['Boulogne Pont de Saint-Cloud', 'Boulogne Jean Jaurès', 'Port dAuteuil', 'Michel-Ange-Auteuil', 'Église dAuteuil', 'Javel-André Citroen', 'Charles Michels', 'Avenue Émile Zola', 'La Motte-Picquet Grenelle', 'Ségur', 'Duroc', 'Vaneau', 'Sèvres-Babylone', 'Mabillon', 'Odéon', 'Cluny-La Sorbonne', 'Maubert-Mutualité', 'Cardinal Lemoine', 'Jussieu', 'Gare dAusterlitz']).
+
 linha(11, ['Châtelet','Hôtel de Ville','Rambuteau','Goncourt','Belleville','Pyrénées','Jourdain','Place des Fêtes','Télégraphe','Mairie des Llias']).
 
 linha(12,['Front Populaire','Porte de la Chapelle','Marx Dormoy','Marcadet Poissonniers','Jules Joffrin','Lamarck Caulaincourt','Abbesses','Pigalle','Sain-Georges','Notre-Dame de-Lorette','Trinité dEstienne DOrves','Madeleine','Concorde','Assemblée Nationale','Solférino','Rue du Bac','Sévres Babylone','Rennes','Notre-Dame-des-Champs','Falguière','Pasteur','Volontaires','Vaugirard','Convention','Porte de Versailles','Corentin Celton','Marie dIssy']).
@@ -107,8 +109,6 @@ ponto_turistico('Tour Montparnasse','Montparnasse Bienvenue').
 ponto_turistico('Museu de Orsay','Solférino').
 
 ponto_turistico('Champs de Mars','École Militaire').
-
-%	Falta a linha 10.2
 
 % --------------------------------------------------------------------------------------------------------------------- %
 
