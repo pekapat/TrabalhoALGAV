@@ -174,7 +174,7 @@ gera_estacoes([H|T], LE):- gera_estacoes(T,LR), append(LR, H, LE).
 
 gera_cruzamentos:- findall(_,cruzamento,_).
 
-cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), LI \== [], assertz(cruzamento(N1,N2,LI)).
+cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), LI \==[], assertz(cruzamento(N1,N2,LI)).
 
 % --------------------------------------------------------------------------------------------------------------------- %
 
@@ -185,7 +185,9 @@ cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), 
 gera_ligacoes:- findall(_, (linha(N,L), gera_ligacoes(N, L, L)), _).
 
 gera_ligacoes(_, _, [_|[]]).
-gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), assertz(liga(N, H, H1, 5)).
+gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10, !, gera_ligacoes(N, T, T), assertz(liga(N, H, H1, 5)).
+gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10.2, !, gera_ligacoes(N, T, T), assertz(liga(N, H1, H, 5)).
+gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), assertz(liga(N, H, H1, 5)), assertz(liga(N, H1, H, 5)).
 
 % --------------------------------------------------------------------------------------------------------------------- %
 
