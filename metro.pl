@@ -1,5 +1,7 @@
 %	Base de conhecimento
 
+:-dynamic liga/3.
+
 linha(1, ['Château de Vincennes', 'Bérault', 'Saint-Mandlé-Tourelle', 'Porte de Vincennes', 'Nation', 'Reuilly-Diderot', 'Gare de Lyon', 'Bastille', 'Saint-Paul', 'Hotel de Ville', 'Châtelet', 'Louvre-Rivoli', 'Palais Royal-Museé du Louvre', 'Tuileries', 'Concorde', 'Champs-Élysées-Clemenceau', 'Franklin D.Roosevelt', 'George V', 'Charles de Gaulle - Étoile', 'Argentine', 'Porte Maillot', 'Les Sablons', 'Pont de Neuilly', 'Esplanade de La Défense', 'La Défense']).
 
 linha(2, ['Porte Dauphine', 'Victor Hugo', 'Charles de Gaulle Étoile', 'Ternes', 'Courcelles', 'Monceau', 'Villiers', 'Rome', 'Place de Clichy', 'Blanche', 'Pigalle', 'Anvers', 'Barbès-Rochechouart', 'La Chapelle', 'Stalingrad', 'Jaurès', 'Colonel Fabien', 'Belleville', 'Couronnes', 'Ménilmontant', 'Père Lachaise', 'Philippe Auguste', 'Alexandre Dumas', 'Avron', 'Nation']).
@@ -185,18 +187,57 @@ cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), 
 gera_ligacoes:- findall(_, (linha(N,L), gera_ligacoes(N, L, L)), _).
 
 gera_ligacoes(_, _, [_|[]]).
-gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10, !, gera_ligacoes(N, T, T), assertz(liga(N, H, H1, 5)).
-gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10.2, !, gera_ligacoes(N, T, T), assertz(liga(N, H1, H, 5)).
-gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), assertz(liga(N, H, H1, 5)), assertz(liga(N, H1, H, 5)).
+gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10, !, gera_ligacoes(N, T, T), \+liga(H,H1,5), assertz(liga(H, H1, 5)).
+gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10.2, !, gera_ligacoes(N, T, T), \+liga(H,H1,5), assertz(liga(H1, H, 5)).
+gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), \+liga(H,H1,5), assertz(liga(H, H1, 5)), \+liga(H1,H,5), assertz(liga(H1, H, 5)).
 
 % --------------------------------------------------------------------------------------------------------------------- %
 
+%	Função para encontrar o caminho mais rápido entre 2 estações
 
-caminho(O, D, L):- caminho(O, D, [O], L).
+mais_rapido(Orig,Dest,Perc,Total):-
+			estimativa(Orig,Dest,H), F is H + 0, % G = 0
+			hbf1([c(F/0,[Orig])],Dest,P,Total),
+			reverse(P,Perc).
 
-caminho(D, D, _, [D]).
-caminho(O, D, LA, [O|L]):- liga(_,O, X, _), \+member(X,LA), caminho(X,D,[X|LA], L).
+hbf1(Percursos,Dest,Percurso,Total):-
+			menor_percurso(Percursos,Menor,Restantes),
+			percursos_seguintes(Menor,Dest,Restantes,Percurso,Total).
 
+percursos_seguintes(c(_/Dist,Percurso),Dest,_,Percurso,Dist):- Percurso=[Dest|_].
+
+percursos_seguintes(c(_,[Dest|_]),Dest,Restantes,Percurso,Total):-!,
+	hbf1(Restantes,Dest,Percurso,Total).
+
+percursos_seguintes(c(_/Dist,[Ult|T]),Dest,Percursos,Percurso,Total):-
+	findall(c(F1/D1,[Z,Ult|T]),proximo_no(Ult,T,Z,Dist,Dest,F1/D1),Lista),
+	append(Lista,Percursos,NovosPercursos),
+	hbf1(NovosPercursos,Dest,Percurso,Total).
+
+proximo_no(X,T,Y,Dist,Dest,F/Dist1):-
+				liga(X,Y,Z),
+				\+ member(Y,T),
+				Dist1 is Dist + Z,
+				estimativa(Y,Dest,H), F is H + Dist1.
+
+menor_percurso([H|Percurso], Menor, [H| Percurso1]):- 
+menor_percurso(Percurso, Menor, Percurso1),
+	menor(H,Menor),!.
+
+menor_percurso([H|T],H,T).
+
+menor(c(A1/B1,_), c(A2/B2,_)):- As1 is A1 + B1, As2 is A2 + B2, As2 < As1.
+
+%estimativa(C1,C2,Est):-
+%		cidade(C1,X1,Y1),
+%		cidade(C2,X2,Y2),
+%		DX is X1-X2,
+%		DY is Y1-Y2,
+%		Est is sqrt(DX*DX+DY*DY).
+
+estimativa(_,_,0). % para desprezar a heurística.
+
+% --------------------------------------------------------------------------------------------------------------------- %
 
 
 
