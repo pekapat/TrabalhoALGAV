@@ -182,7 +182,7 @@ cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), 
 
 
 
-%	Funcão para criar dinamicamente factos do tipo liga(Linha, EstacaoOrigem, EstacaoFinal, Tempo).
+%	Funcão para criar dinamicamente factos do tipo liga(EstacaoOrigem, EstacaoFinal, Tempo).
 
 gera_ligacoes:- findall(_, (linha(N,L), gera_ligacoes(N, L, L)), _).
 
