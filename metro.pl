@@ -195,10 +195,12 @@ gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), \+liga(H,H1,5), ass
 
 %	Função para encontrar o caminho mais rápido entre 2 estações
 
+:- use_module(library(statistics)). % time/1
+
 mais_rapido(Orig,Dest,Perc,Total):-
 			estimativa(Orig,Dest,H), F is H + 0, % G = 0
-			hbf1([c(F/0,[Orig])],Dest,P,Total),
-			reverse(P,Perc).
+			time((hbf1([c(F/0,[Orig])],Dest,P,Total),
+			reverse(P,Perc))).
 
 hbf1(Percursos,Dest,Percurso,Total):-
 			menor_percurso(Percursos,Menor,Restantes),
