@@ -20,7 +20,7 @@ linha(7,['La Courneuve 8 Mai 1945', 'Fort dAubervilliers', 'Aubervilliers-Pantin
 
 linha('7bis',['La Courneuve 8 Mai 1945', 'Fort dAubervilliers', 'Aubervilliers-Pantin Quatre Chemins', 'Porte de la Villette', 'Corentin Cariou', 'Crimée', 'Riquet', 'Stalingrad', 'Louis Blanc', 'Château-Landon', 'Gare de lEst', 'Poissonnière', 'Cadet', 'Le Peletier', 'Chaussée dAntin-La Fayette', 'Opéra', 'Pyramides', 'Palais Royal', 'Musée du Louvre', 'Pont Neuf', 'Châtelet', 'Pont Marie', 'Sully-Morland', 'Jussieu', 'Place Monge', 'Censier-Daubenton', 'Les Gobelins', 'Place dItalie', 'Tolbiac', 'Maison Blanche', 'Le Kremlin-Bicêtre', 'Villejuif Léo-Lagrange', 'Villejuif Paul Vaillant-Couturier', 'Villejuif Louis Aragon']).
 
-linha(8, ['Ballard', 'Lourmel', 'Boucicaut', 'Félix Faure', 'Commerce', 'La Motte-Picquet-Grenelle', 'École Militaire', 'La Tour-Maubourg', 'Invalides', 'Concorde', 'Madeleine', 'Opéra', 'Richelieu-Drouot', 'Grands Boulevards', 'Bonne Nouvelle', 'Strasbourg-Saint-Dennis', 'République', 'Filles du Calvaire', 'Saints-Sébastien-Froissart', 'Chemin Vert', 'Bastille', 'Ledru-Rollin', 'Faidherbe-Chaligny', 'Reuilly-Diderot', 'Montgallet', 'Daumesnil', 'Michel Bizot', 'Porte Dorée', 'Porte de Charenton', 'Liberté', 'Charenton-Écoles', 'École Vétérinaire de Maisons-Alfort', 'Maisons-Alfort-Stade', 'Maisons-Alfort-Les Juilliottes', 'Créteil-LÉchat', 'Créteil-Université', 'Créteil-Préfecture']).
+linha(8, ['Balard', 'Lourmel', 'Boucicaut', 'Félix Faure', 'Commerce', 'La Motte-Picquet-Grenelle', 'École Militaire', 'La Tour-Maubourg', 'Invalides', 'Concorde', 'Madeleine', 'Opéra', 'Richelieu-Drouot', 'Grands Boulevards', 'Bonne Nouvelle', 'Strasbourg-Saint-Dennis', 'République', 'Filles du Calvaire', 'Saints-Sébastien-Froissart', 'Chemin Vert', 'Bastille', 'Ledru-Rollin', 'Faidherbe-Chaligny', 'Reuilly-Diderot', 'Montgallet', 'Daumesnil', 'Michel Bizot', 'Porte Dorée', 'Porte de Charenton', 'Liberté', 'Charenton-Écoles', 'École Vétérinaire de Maisons-Alfort', 'Maisons-Alfort-Stade', 'Maisons-Alfort-Les Juilliottes', 'Créteil-LÉchat', 'Créteil-Université', 'Créteil-Préfecture']).
 
 linha(9, ['Pont de Sèvres', 'Billancourt', 'Marcel Sembat', 'Porte de Saint-Cloud', 'Exelmans', 'Michel-Ange-Auteuil', 'Jasmin', 'Ranelagh', 'La Muette', 'Rue de la Pompe', 'Trocadéro', 'Iéna', 'Alma-Marceau', 'Franklin D.Roosevelt', 'Saint-Philippe-du-Roule', 'Miromesnil', 'Saint-Augustin', 'Havre-Caumartin', 'Chaussée dAntin-La Fayette', 'Richelieu-Drouot', 'Grands Boulevards', 'Bonne Nouvelle', 'Strasbourg-Saint-Dennis', 'République', 'Oberkampf', 'Saint-Ambroise', 'Voltaire', 'Charonne', 'Rue des Boulets', 'Nation', 'Buzenval', 'Maraichers', 'Porte de Montreuil', 'Robespierre', 'Croix de Chavaux', 'Mairie de Montreuil']).
 
@@ -200,6 +200,599 @@ horario('D','6:05','1:30').
 
 horario('E','5:45','1:15').
 
+frequencia('Abbesses',4).
+
+frequencia('Alexandre Dumas',3).
+
+frequencia('Alma-Marceau',3).
+
+frequencia('Alésia',2).
+
+frequencia('Anatole France',4).
+
+frequencia('Anvers',2).
+
+frequencia('Argentine',2).
+
+frequencia('Arts et Métiers',3).
+
+frequencia('Asnières-Gennevilliers - Les Courtilles',5).
+
+frequencia('Assemblée Nationale',3).
+
+frequencia('Aubervilliers Pantin Quatre Chemins',2).
+
+frequencia('Avenue Emile Zola',4).
+
+frequencia('Avron',3).
+
+frequencia('Balard',4).
+
+frequencia('Barbès Rochechouart',3).
+
+frequencia('Basilique de Saint-Denis',5).
+
+frequencia('Bastille',3).
+
+frequencia('Bel-Air',3).
+
+frequencia('Belleville',3).
+
+frequencia('Bercy',3).
+
+frequencia('Bibliothèque François Mitterrand',3).
+
+frequencia('Billancourt',3).
+
+frequencia('Bir-Hakeim',4).
+
+frequencia('Blanche',3).
+
+frequencia('Bobigny Pablo Picasso',3).
+
+frequencia('Bobigny-Pantin Raymond Queneau',4).
+
+frequencia('Boissière',2).
+
+frequencia('Bolivar',5).
+
+frequencia('Bonne Nouvelle',5).
+
+frequencia('Botzaris',6).
+
+frequencia('Boucicaut',4).
+
+frequencia('Botzaris',6).
+
+frequencia('Boulogne Jean Jaurès',5).
+
+frequencia('Boulogne Pont de Saint-Cloud',4).
+
+frequencia('Bourse',3).
+
+frequencia('Brochant',5).
+
+frequencia('Bourse',4).
+
+frequencia('Bréguet-Sabin',3).
+
+frequencia('Buttes Chaumont',6).
+
+frequencia('Buzenval',3).
+
+frequencia('Bérault',3).
+
+frequencia('Cadet',4).
+
+frequencia('Cambronne',4).
+
+frequencia('Campo-Formio',3).
+
+frequencia('Cardinal Lemoine',4).
+
+frequencia('Carrefour Pleyel',6).
+
+frequencia('Censier Daubenton',5).
+
+frequencia('Champs-Elysées - Clémenceau',3).
+
+frequencia('Chardon-Lagache',5).
+
+frequencia('Charenton-Ecoles',4).
+
+frequencia('Charles Michels',5).
+
+frequencia('Château de Vincennes',3).
+
+frequencia('Charles de Gaulle - Etoile',3).
+
+frequencia('Chaussée dAntin La Fayette',4).
+
+frequencia('Chemin Vert',4).
+
+frequencia('Chevaleret',3).
+
+frequencia('Château Rouge',4).
+
+frequencia('Château dEau',2).
+
+frequencia('Château-Landon',4).
+
+frequencia('Châtelet',3).
+
+frequencia('Châtillon-Montrouge',3).
+
+frequencia('Cité',3).
+
+frequencia('Cluny La Sorbonne',5).
+
+frequencia('Colonel Fabien',3).
+
+frequencia('Commerce',4).
+
+frequencia('Concorde',3).
+
+frequencia('Convention',4).
+
+frequencia('Corentin Cariou',4).
+
+frequencia('Corentin Celton',4).
+
+frequencia('Corvisart',3).
+
+frequencia('Cour Saint-Emilion',3).
+
+frequencia('Courcelles',3).
+
+frequencia('Couronnes',3).
+
+frequencia('Danube',7).
+
+frequencia('Daumesnil',3).
+
+frequencia('Denfert-Rochereau',2).
+
+frequencia('Dugommier',4).
+
+frequencia('Dupleix',4).
+
+frequencia('Duroc',5).
+
+frequencia('Ecole Militaire',5).
+
+frequencia('Ecole Vétérinaire de Maisons-Alfort',3).
+
+frequencia('Edgar Quinet',3).
+
+frequencia('Eglise dAuteuil',6).
+
+frequencia('Esplanade de La Défense',3).
+
+frequencia('Etienne Marcel',2).
+
+frequencia('Europe',3).
+
+frequencia('Exelmans',3).
+
+frequencia('Faidherbe-Chaligny',4).
+
+frequencia('Falguière',3).
+
+frequencia('Filles du Calvaire',3).
+
+frequencia('Fort dAubervilliers',5).
+
+frequencia('Franklin D.Roosevelt',3).
+
+frequencia('Front Populaire',3).
+
+frequencia('Félix Faure',4).
+
+frequencia('Gabriel Péri',5).
+
+frequencia('Gallieni',3).
+
+frequencia('Gambetta',3).
+
+frequencia('Gare dAusterlitz',3).
+
+frequencia('Gare de Lyon',3).
+
+frequencia('Gare de lEst',3).
+
+frequencia('Gare du Nord',3).
+
+frequencia('Garibaldi',6).
+
+frequencia('Gaîté',3).
+
+frequencia('George V',3).
+
+frequencia('Glacière',4).
+
+frequencia('Goncourt',3).
+
+frequencia('Grands Boulevards',3).
+
+frequencia('Guy Môquet',6).
+
+frequencia('Havre-Caumartin',3).
+
+frequencia('Hoche',5).
+
+frequencia('Hôtel de Ville',3).
+
+frequencia('Invalides',2).
+
+frequencia('Iéna',4).
+
+frequencia('Jacques Bonsergent',4).
+
+frequencia('Jasmin',5).
+
+frequencia('Jaurès',4).
+
+frequencia('Javel André Citroën',4).
+
+frequencia('Jourdain',3).
+
+frequencia('Jules Joffrin',5).
+
+frequencia('Jussieu',4).
+
+frequencia('Kléber',4).
+
+frequencia('Jussieu',4).
+
+frequencia('La Chapelle',4).
+
+frequencia('La Courneuve 8 mai 1945',6).
+
+frequencia('La Défense',3).
+
+frequencia('La Fourche',4).
+
+frequencia('La Motte-Picquet Grenelle',4).
+
+frequencia('La Muette',2).
+
+frequencia('La Tour-Maubourg',4).
+
+frequencia('Lamarck Caulaincourt',5).
+
+frequencia('Laumière',2).
+
+frequencia('Le Kremlin-Bicêtre',7).
+
+frequencia('Le Peletier',4).
+
+frequencia('Ledru-Rollin',4).
+
+frequencia('Les Agnettes',6).
+
+frequencia('Les Gobelins',4).
+
+frequencia('Les Halles',3).
+
+frequencia('Les Sablons',3).
+
+frequencia('Liberté',4).
+
+frequencia('Liège',34).
+
+frequencia('Louis Blanc',4).
+
+frequencia('Louise Michel',4).
+
+frequencia('Lourmel',4).
+
+frequencia('Louvre-Rivoli',3).
+
+frequencia('Mabillon',4).
+
+frequencia('Madeleine',4).
+
+frequencia('Mairie dIssy',3).
+
+frequencia('Mairie dIvry',7).
+
+frequencia('Mairie de Clichy',6).
+
+frequencia('Mairie de Montreuil',3).
+
+frequencia('Mairie de Montrouge',4).
+
+frequencia('Mairie de Saint-Ouen',5).
+
+frequencia('Mairie de Lilas',4).
+
+frequencia('Maison Blanche',3).
+
+frequencia('Maisons-Alfort Les Juilliottes',4).
+
+frequencia('Maisons-Alfort Stade',5).
+
+frequencia('Malakoff Plateau de Vanves',4).
+
+frequencia('Malakoff Rue Etienne Dolet',7).
+
+frequencia('Malesherbes',6).
+
+frequencia('Maraîchers',4).
+
+frequencia('Marcadet Poissonniers',4).
+
+frequencia('Marcel Sembat',4).
+
+frequencia('Marx Dormoy',6).
+
+frequencia('Maubert Mutualité',4).
+
+frequencia('Michel Bizot',8).
+
+frequencia('Michel-Ange Auteuil',4).
+
+frequencia('Michel-Ange Molitor',4).
+
+frequencia('Mirabeau',4).
+
+frequencia('Miromesnil',6).
+
+frequencia('Monceau',3).
+
+frequencia('Montgallet',4).
+
+frequencia('Montparnasse Bienvenüe',3).
+
+frequencia('Mouton-Duvernet',5).
+
+frequencia('Ménilmontant',3).
+
+frequencia('Nation',4).
+
+frequencia('Nationale',8).
+
+frequencia('Notre-Dame-de-Lorette',6).
+
+frequencia('Notre-Dame-des-Champs',4).
+
+frequencia('Oberkampf',4).
+
+frequencia('Odéon',4).
+
+frequencia('Olympiades',7).
+
+frequencia('Opéra',5).
+
+frequencia('Ourcq',4).
+
+frequencia('Palais Royal Musée du Louvre',4).
+
+frequencia('Parmentier',4).
+
+frequencia('Passy',3).
+
+frequencia('Pasteur',5).
+
+frequencia('Pelleport',4).
+
+frequencia('Pereire',6).
+
+frequencia('Pernety',7).
+
+frequencia('Philippe Auguste',4).
+
+frequencia('Picpus',4).
+
+frequencia('Pierre et Marie Curie',4).
+
+frequencia('Pigalle',5).
+
+frequencia('Place Monge',4).
+
+frequencia('Place dItalie',6).
+
+frequencia('Place de Clichy',5).
+
+frequencia('Place des Fêtes',8).
+
+frequencia('Plaisance',4).
+
+frequencia('Poissonnière',4).
+
+frequencia('Pont Marie',4).
+
+frequencia('Pont Neuf',4).
+
+frequencia('Pont de Levallois Bécon',4).
+
+frequencia('Pont de Neuilly',2).
+
+frequencia('Pont de Sèvres',6).
+
+frequencia('Porte Dauphine',3).
+
+frequencia('Porte Dorée',3).
+
+frequencia('Porte Maillot',3).
+
+frequencia('Porte dAuteuil',4).
+
+frequencia('Porte dItalie',4).
+
+frequencia('Porte dIvry',6).
+
+frequencia('Porte dOrléans',5).
+
+frequencia('Porte de Bagnolet',4).
+
+frequencia('Porte de Champerret',5).
+
+frequencia('Porte de Charenton',4).
+
+frequencia('Porte de Choisy',4).
+
+frequencia('Porte de Clichy',3).
+
+frequencia('Porte de Clignancourt',4).
+
+frequencia('Porte de Montreuil',3).
+
+frequencia('Porte de Pantin',3).
+
+frequencia('Porte de Saint-Cloud',3).
+
+frequencia('Porte de Saint-Ouen',3).
+
+frequencia('Porte de Vanves',6).
+
+frequencia('Porte de Vincennes',4).
+
+frequencia('Porte de la Chapelle',3).
+
+frequencia('Porte de la Villette',4).
+
+frequencia('Porte des Lilas',4).
+
+frequencia('Porte de Versailles',3).
+
+frequencia('Porte de Vincennes',3).
+
+frequencia('Porte de la Chapelle',5).
+
+frequencia('Porte de la Villette',5).
+
+frequencia('Porte des Lilas',5).
+
+frequencia('Quai de la Gare',4).
+
+frequencia('Quai de la Rapée',6).
+
+frequencia('Quatre-Septembre',6).
+
+frequencia('Rambuteau',4).
+
+frequencia('Raspail',4).
+
+frequencia('Ranelagh',3).
+
+frequencia('Rennes',3).
+
+frequencia('Reuilly-Diderot',4).
+
+frequencia('Richard-Lenoir',4).
+
+frequencia('Richelieu-Drouot',4).
+
+frequencia('Riquet',5).
+
+frequencia('Robespierre',5).
+
+frequencia('Rome',4).
+
+frequencia('Rue Saint-Maur',4).
+
+frequencia('Rue de la Pompe',4).
+
+frequencia('Rue des Boulets',6).
+
+frequencia('Rue du Bac',6).
+
+frequencia('Réaumur-Sébastopol',7).
+
+frequencia('République',4).
+
+frequencia('Saint-Ambroise',3).
+
+frequencia('Saint-Augustin',3).
+
+frequencia('Saint-Denis-Porte de Paris',3).
+
+frequencia('Saint-Denis-Université',4).
+
+frequencia('Saint-Fargeau',4).
+
+frequencia('Saint-Francois-Xavier',4).
+
+frequencia('Saint-Georges',3).
+
+frequencia('Saint-Germain-des-Prés',3).
+
+frequencia('Saint-Jacques',5).
+
+frequencia('Saint-Lazare',6).
+
+frequencia('Saint-Mandé',4).
+
+frequencia('Saint-Marcel',4).
+
+frequencia('Saint-Michel',5).
+
+frequencia('Saint-Paul',5).
+
+frequencia('Saint-Philippe-du-Roule',6).
+
+frequencia('Saint-Placide',4).
+
+frequencia('Saint-Sulpice',4).
+
+frequencia('Saint-Sébastien Froissart',4).
+
+frequencia('Sentier',5).
+
+frequencia('Simplon',5).
+
+frequencia('Solférino',6).
+
+frequencia('Stalingrad',6).
+
+frequencia('Strasbourg-Saint-Denis',5).
+
+frequencia('Sully-Morland',5).
+
+frequencia('Sèvres-Babylone',5).
+
+frequencia('Sèvres-Lecourbe',5).
+
+frequencia('Ségur',6).
+
+frequencia('Temple',3).
+
+frequencia('Ternes',3).
+
+frequencia('Tolbiac',4).
+
+frequencia('Trinité dEstienne dOrves',4).
+
+frequencia('Trocadéro',4).
+
+frequencia('Tuileries',5).
+
+frequencia('Télégraphe',5).
+
+frequencia('Vaneau',4).
+
+frequencia('Varenne',4).
+
+frequencia('Vaugirard',5).
+
+frequencia('Vavin',5).
+
+frequencia('Victor Hugo',3).
+
+frequencia('Villejuif Louis Aragon',3).
+
+frequencia('Villejuif Léo Lagrange',5).
+
+frequencia('Villejuif Paul Vaillant-Couturier',6).
+
+frequencia('Villiers',6).
+
+frequencia('Volontaires',4).
+
+frequencia('Voltaire',4).
+
+frequencia('Wagram',4).
 % --------------------------------------------------------------------------------------------------------------------- %
 
 
