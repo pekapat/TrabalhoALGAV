@@ -911,8 +911,8 @@ percursos_seguintes_trocas(c(Tro/N,[Ult|T]),Dest,Percursos,Percurso,Trocas):-
 	menos_trocas1(NovosPercursos,Dest,Percurso,Trocas).
 
 
-proximo_no_trocas(X,T,Y,Tro,Dest,T1, N1, N):-
-				liga(X,Y,Z),
+proximo_no_trocas(X,T,Y,Tro,_,T1, N1, N):-
+				liga(X,Y,_),
 				\+ member(Y,T),
 				(linha(N, LE), member(X,LE), member(Y,LE), 
 				T1 is Tro, N1 is N ; T1 is Tro + 1, linha(N1, LE), member(Y, LE)).
