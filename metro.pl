@@ -828,6 +828,8 @@ gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), \+liga(H,H1,5), ass
 
 % --------------------------------------------------------------------------------------------------------------------- %
 
+
+
 %	Função para encontrar o caminho mais rápido entre 2 estações
 
 :- use_module(library(statistics)). % time/1
@@ -857,7 +859,7 @@ proximo_no(X,T,Y,Dist,Dest,F/Dist1):-
 				Dist1 is Dist + Z,
 				estimativa(Y,Dest,H), F is H + Dist1.
 
-menor_percurso([H|Percurso], Menor, [H| Percurso1]):- 
+menor_percurso([H|Percurso], Menor, [H| Percurso1]):-
 menor_percurso(Percurso, Menor, Percurso1),
 	menor(H,Menor),!.
 
@@ -878,8 +880,43 @@ estimativa(_,_,0). % para desprezar a heurística.
 
 
 
+%	Função para encontrar o caminho com menos trocas de linha entre 2 estações
 
 
+menos_trocas(Orig,Dest,Perc,Trocas):-
+			time((menos_trocas1([(0,[Orig])],Dest,P,Trocas),
+			reverse(P,Perc))).
+
+menos_trocas1(Percursos,Dest,Percurso,Trocas):-
+			menor_percurso_trocas(Percursos,Menor,Restantes),
+			percursos_seguintes_trocas(Menor,Dest,Restantes,Percurso,Trocas).
+
+menor_percurso_trocas([H|Percurso], Menor, [H| Percurso1]):-
+menor_percurso_trocas(Percurso, Menor, Percurso1),
+	menor_trocas(H,Menor),!.
+
+menor_percurso_trocas([H|T],H,T).
+
+menor_trocas((A1,_), (A2,_)):- A2 < A1.
+
+percursos_seguintes_trocas((Trocas,Percurso),Dest,_,Percurso,Trocas):- Percurso=[Dest|_].
+
+percursos_seguintes_trocas((_,[Dest|_]),Dest,Restantes,Percurso,Trocas):-!,
+	menos_trocas1(Restantes,Dest,Percurso,Trocas).
+
+percursos_seguintes_trocas((Tro,[Ult|T]),Dest,Percursos,Percurso,Trocas):-
+	findall((T1,[Z,Ult|T]),proximo_no_trocas(Ult,T,Z,Tro,Dest,T1),Lista),
+	append(Lista,Percursos,NovosPercursos),
+	menos_trocas1(NovosPercursos,Dest,Percurso,Trocas).
+
+
+proximo_no_trocas(X,T,Y,Tro,Dest,T1):-
+				liga(X,Y,Z),
+				\+ member(Y,T),
+				(linha(_, LE), member(X,LE), member(Y,LE),
+				T1 is Tro ; T1 is Tro + 1).
+
+% --------------------------------------------------------------------------------------------------------------------- %
 
 
 
