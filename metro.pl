@@ -822,9 +822,9 @@ cruzamento:- linha(N1,LE1), linha(N2,LE2), N1 \== N2, intersection(LE1,LE2,LI), 
 gera_ligacoes:- findall(_, (linha(N,L), gera_ligacoes(N, L, L)), _).
 
 gera_ligacoes(_, _, [_|[]]).
-gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10, !, gera_ligacoes(N, T, T), \+liga(H,H1,5), assertz(liga(H, H1, 5)).
-gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10.2, !, gera_ligacoes(N, T, T), \+liga(H,H1,5), assertz(liga(H1, H, 5)).
-gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), \+liga(H,H1,5), assertz(liga(H, H1, 5)), \+liga(H1,H,5), assertz(liga(H1, H, 5)).
+gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10, !, A1 is random(4), A is A1 + 1, gera_ligacoes(N, T, T), \+liga(H,H1,_), assertz(liga(H, H1, A)).
+gera_ligacoes(N, [H|T], [H, H1|_]):- N == 10.2, !, A1 is random(4), A is A1 + 1, gera_ligacoes(N, T, T), \+liga(H,H1,_), assertz(liga(H1, H, A)).
+gera_ligacoes(N, [H|T], [H, H1|_]):- gera_ligacoes(N, T, T), \+liga(H,H1,_), A1 is random(4), A is A1 + 1, assertz(liga(H, H1, A)), \+liga(H1,H,_), assertz(liga(H1, H, A)).
 
 % --------------------------------------------------------------------------------------------------------------------- %
 
@@ -866,13 +866,6 @@ menor_percurso(Percurso, Menor, Percurso1),
 menor_percurso([H|T],H,T).
 
 menor(c(A1/B1,_), c(A2/B2,_)):- As1 is A1 + B1, As2 is A2 + B2, As2 < As1.
-
-%estimativa(C1,C2,Est):-
-%		cidade(C1,X1,Y1),
-%		cidade(C2,X2,Y2),
-%		DX is X1-X2,
-%		DY is Y1-Y2,
-%		Est is sqrt(DX*DX+DY*DY).
 
 estimativa(_,_,0). % para desprezar a heurística.
 
@@ -918,7 +911,6 @@ proximo_no_trocas(X,T,Y,Tro,_,T1, N1, N):-
 				T1 is Tro, N1 is N ; T1 is Tro + 1, linha(N1, LE), member(Y, LE)).
 
 % --------------------------------------------------------------------------------------------------------------------- %
-
 
 
 
