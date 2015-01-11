@@ -884,7 +884,8 @@ estimativa(_,_,0). % para desprezar a heurística.
 
 
 menos_trocas(Orig,Dest,Perc,Trocas):-
-			time((menos_trocas1([(0,[Orig])],Dest,P,Trocas),
+			linha(N, LE), member(Orig, LE),!,
+			time((menos_trocas1([c(0/N,[Orig])],Dest,P,Trocas),
 			reverse(P,Perc))).
 
 menos_trocas1(Percursos,Dest,Percurso,Trocas):-
@@ -897,24 +898,24 @@ menor_percurso_trocas(Percurso, Menor, Percurso1),
 
 menor_percurso_trocas([H|T],H,T).
 
-menor_trocas((A1,_), (A2,_)):- A2 < A1.
+menor_trocas(c(A1/_,_), c(A2/_,_)):- A2 < A1.
 
-percursos_seguintes_trocas((Trocas,Percurso),Dest,_,Percurso,Trocas):- Percurso=[Dest|_].
+percursos_seguintes_trocas(c(Trocas/_,Percurso),Dest,_,Percurso,Trocas):- Percurso=[Dest|_].
 
-percursos_seguintes_trocas((_,[Dest|_]),Dest,Restantes,Percurso,Trocas):-!,
+percursos_seguintes_trocas(c(_/_,[Dest|_]),Dest,Restantes,Percurso,Trocas):-!,
 	menos_trocas1(Restantes,Dest,Percurso,Trocas).
 
-percursos_seguintes_trocas((Tro,[Ult|T]),Dest,Percursos,Percurso,Trocas):-
-	findall((T1,[Z,Ult|T]),proximo_no_trocas(Ult,T,Z,Tro,Dest,T1),Lista),
+percursos_seguintes_trocas(c(Tro/N,[Ult|T]),Dest,Percursos,Percurso,Trocas):-
+	findall(c(T1/N1,[Z,Ult|T]),proximo_no_trocas(Ult,T,Z,Tro,Dest,T1,N1,N),Lista),
 	append(Lista,Percursos,NovosPercursos),
 	menos_trocas1(NovosPercursos,Dest,Percurso,Trocas).
 
 
-proximo_no_trocas(X,T,Y,Tro,Dest,T1):-
+proximo_no_trocas(X,T,Y,Tro,Dest,T1, N1, N):-
 				liga(X,Y,Z),
 				\+ member(Y,T),
-				(linha(_, LE), member(X,LE), member(Y,LE),
-				T1 is Tro ; T1 is Tro + 1).
+				(linha(N, LE), member(X,LE), member(Y,LE), 
+				T1 is Tro, N1 is N ; T1 is Tro + 1, linha(N1, LE), member(Y, LE)).
 
 % --------------------------------------------------------------------------------------------------------------------- %
 
